@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmailService</name>
+    </assembly>
+    <members>
+        <member name="T:EmailService.Controllers.EmailAccountsController">
+            <summary>
+            Prefixing with 'api' is a common convention for RESTful APIs
+            </summary>
+        </member>
+        <member name="M:EmailService.Controllers.EmailAccountsController.#ctor(EmailDbContext)">
+            <param name="context"></param>
+        </member>
+        <member name="M:EmailService.Controllers.EmailAccountsController.Get">
+            <summary>
+            Get all EmailAccounts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmailService.Controllers.EmailAccountsController.Post(EmailService.Models.EmailAccount)">
+            <param name="emailAccount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmailService.Controllers.EmailAccountsController.Delete(System.Int32)">
+            <summary>
+            Update an existing EmailAccount
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmailService.Controllers.EmailAccountsController.SendEmailMessage(System.Int32,System.String)">
+            <summary>
+            Get all EmailMessages of a specific EmailAccount
+            </summary>
+            <param name="emailAccountId"></param>
+            <param name="emailMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmailService.Controllers.EmailAccountsController.UpdateEmailMessage(System.Int32,System.Int32,EmailService.Models.EmailMessage)">
+            <summary>
+            Get all EmailMessages of a specific EmailAccount
+            </summary>
+            <param name="emailAccountId"></param>
+            <param name="emailMessageId"></param>
+            <param name="updatedEmailMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmailService.Controllers.EmailAccountsController.DeleteEmailMessage(System.Int32,System.Int32)">
+            <param name="emailAccountId"></param>
+            <param name="emailMessageId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmailDbContext">
+            <summary>
+            Represents the database context for the EmailService.
+            </summary>
+        </member>
+        <member name="M:EmailDbContext.EnsureDatabaseAndSeedData">
+            <summary>
+            Ensures the database is created and seeded with mock data if needed.
+            </summary>
+        </member>
+    </members>
+</doc>
